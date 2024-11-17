@@ -173,8 +173,8 @@ function resetGame() {
     score = 0;
     x = canvas.width / 2;
     y = canvas.height - 30;
-    dx = 4; // 设置小球的初始速度
-    dy = -4; // 设置小球的初始速度
+    dx = 2; // 设置小球的初始速度
+    dy = -2; // 设置小球的初始速度
     paddleX = (canvas.width - paddleWidth) / 2;
   
     // 重新生成砖块
@@ -253,8 +253,8 @@ document.getElementById('startButton').addEventListener('click', function() {
 // 点击小球重新开始运动
 canvas.addEventListener('click', function() {
   if (!isGameRunning && lives > 0) {
-    dx = 4; // 开始小球运动
-    dy = -4; // 开始小球运动
+    dx = 2; // 开始小球运动
+    dy = -2; // 开始小球运动
     isGameRunning = true;
     draw();
   }
